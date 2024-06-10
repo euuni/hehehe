@@ -1,7 +1,7 @@
 body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
-    font-style: italic;
+    font-style: italic;;
     margin: 0;
     padding: 0;
     display: flex;
@@ -58,52 +58,6 @@ nav a  {
     font-size: 20px;
 }
 
-.slider{
-    position: relative;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-.slides-container{
-    position: relative;
-}
-
-.slide{
-    width: 100%;
-    height: auto;
-    display: none;
-}
-
-.slide.active{
-    display: block;
-}
-
-.prev, .next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(176, 255, 111, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev{
-    left: 10px;
-}
-
-.next{
-    right: 10px;
-}
-
-.me{
-    text-align: center;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
 footer{
     width: 100%;
     padding: 20px;
@@ -112,9 +66,45 @@ footer{
     color: white;
     margin-top: 10px;
 }
-
-.foot, .me, .hihihi{
+.foot{
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
     font-style: italic;
 }
+
+/*gallery.html*/
+.container {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .images {
+    width: 100%;
+    height: auto;
+  }
+  .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      grid-auto-flow: row dense;
+    }
+    .lova {
+      display: grid;
+      row-gap: 20px;
+    }
+    .lova2 {
+      display: grid;
+      row-gap: 60px;
+    }
+    .lova3 {
+      display: grid;
+      row-gap: 20px;
+    }
+  }

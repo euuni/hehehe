@@ -24,3 +24,7 @@ document.getElementById('button4').addEventListener('click', () => {
 document.getElementById('button5').addEventListener('click', () => {
   navigateWithConfirmation("https://teamproject-sigma.vercel.app/");
 });
+
+document.getElementById('button6').addEventListener('click', () => {
+  navigateWithConfirmation("https://next-js24.vercel.app/");
+});
